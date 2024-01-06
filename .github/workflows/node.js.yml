@@ -26,3 +26,5 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: npm run build
+    - run: sudo -S rm -R /var/www/build
+    - run: sudo -S mv /home/ubuntu/frontend/_work/frontend/frontend/build /var/www
